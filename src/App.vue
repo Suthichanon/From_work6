@@ -38,8 +38,6 @@
                 <label for="tel">โทรศัพท์:</label>
                 <input class="form-control" type="text" v-model="formData.tel" id="tel" required />
               </div>
-
-
               <button type="submit" class="btn btn-primary" @click.prevent="submitForm">
                 Submit
               </button>
@@ -49,9 +47,6 @@
       </div>
       <div class="col-md-8">
         <AccordionItems :formDataArray="formDataArray" />
-        <div v-for="(, index) in formDataArray" :key="index">
-          <button @click="removeFormData(index)">Remove</button>
-        </div>
       </div>
     </div>
   </div>
@@ -84,7 +79,6 @@ export default {
     submitForm() {
       // Add the form data to the formDataArray
       this.formDataArray.push(this.formData);
-
       // Reset the formData object
       this.formData = {
         WriteNo: null,
@@ -97,12 +91,6 @@ export default {
         tel: "",
       };
     },
-    
-    removeFormData(index) {
-    if (confirm('Are you sure you want to remove this form data?')) {
-      this.formDataArray.splice(index, 1);
-    }
-  },
   },
 };
 </script>
