@@ -5,7 +5,7 @@
         <h5 class="mb-0">
           <button class="btn btn-link collapsed" data-toggle="collapse" :data-target="'#collapse' + i"
             aria-expanded="true" :aria-controls="'collapse' + i">
-            [ {{ data.date }} ] {{ data.name }}
+            [ {{ data.date }} ] {{ data.name_lastname }}
           </button>
         </h5>
       </div>
