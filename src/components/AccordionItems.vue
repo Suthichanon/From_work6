@@ -41,5 +41,12 @@ export default {
 }
 </script>
 <style scoped>
-
+.button{
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+.button:hover{
+  
+}
 </style>

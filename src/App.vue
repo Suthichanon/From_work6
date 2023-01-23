@@ -96,5 +96,43 @@ export default {
 </script>
 
 <style scoped>
+.form {
+  padding: 20px;
+  margin: 0 auto;
+}
 
+/* Make the input fields larger */
+.form-control-lg {
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+/* Center the submit button */
+.btn-primary {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Add some hover effect to the submit button */
+.btn-primary:hover {
+  background-color: #3a45dd;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Add some border-radius to the card */
+.card {
+  border-radius: 10px;
+}
+
+/* Add some styles to the card-header */
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
 </style>
